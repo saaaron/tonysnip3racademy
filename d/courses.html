@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Sa Aaron">
+    <title>Courses</title>
+    <link href="../assets/img/favicon.png" rel="icon">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
+    <style>
+        .sidebar .nav-link {
+            font-size: inherit;
+        }
+
+        .bi {
+            height: 1.5rem;
+        }
+    </style>
+</head>
+<body id="d_body">
+    <header class="navbar sticky-top bg-dark flex-md-nowrap p-2 ps-sm-5 pe-sm-5 border-bottom">
+        <div class="logo">
+            <a class="col-md-3 col-lg-2 me-0 px-3 fs-6" href="home.html">
+                <img src="../assets/img/logo0.webp" alt="logo">
+            </a>
+        </div>
+        <div class="navbar-nav flex-row">
+            <div class="nav-item text-nowrap">
+                <div class="dropdown">
+                    <button class="nav-link px-3 text-white dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <!-- <div class="bi bi-bell icon_size_inc"></div> <div class="ms-2" style="display: inline-block;"><span class="badge bg-danger">2</span></div> -->
+                        <div class="notification-wrapper">
+                            <i class="bi bi-bell icon_size_inc"></i>
+                            <span class="badge bg-danger notification-badge">2</span>
+                        </div>
+                    </button>
+                    <ul class="dropdown-menu" style="position: absolute;left: -280px;width: 350px;">
+                        <li>
+                            <a class="dropdown-item text-wrap" href="#">
+                                🎉 Congratulations! You have successfully paid for <b>Introduction to Forex I</b> course
+                                - <span class="text-muted">Just now</span> <span class='badge bg-danger'>new</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-item text-nowrap d-md-none d-lg-block d-lg-none d-xl-block d-xl-none d-xxl-block d-xxl-none">
+                <button class="nav-link px-3 text-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="bi bi-list icon_size_inc"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <div class="row border-start">
+            <div class="sidebar col-md-3 col-lg-3 p-0" style="border-right: 1px solid #eee;">
+                <div class="offcanvas-md offcanvas-end" tabindex="-1" id="sidebarMenu" aria-labelledby="sidebarMenuLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="sidebarMenuLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#sidebarMenu" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body d-md-flex flex-column p-0 pt-lg-3 overflow-y-auto">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2" aria-current="page" href="home.html">
+                            <span class="bi bi-layout-wtf"></span>
+                            Dashboard
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2 active" href="courses.html">
+                            <span class="bi bi-briefcase"></span>
+                            Courses
+                            <span class="badge bg-secondary">3</span>
+                            <span class="badge bg-danger">New</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2" href="events.html">
+                            <span class="bi bi-briefcase"></span>
+                            Events
+                            <span class="badge bg-danger">New</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2" href="payments-history.html">
+                            <span class="bi bi-clock-history"></span>
+                            Payments history
+                            </a>
+                        </li>
+                    </ul>
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-body-secondary text-uppercase">
+                    <b>SUPPORT</b>
+                    </h6>
+                    <ul class="nav flex-column mb-auto">
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2" href="#settings" data-bs-toggle="modal" data-bs-target="#settings_modal">
+                            <spn class="bi bi-gear"></spn>
+                            Settings
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2" href="#">
+                            <span class="bi bi-question-circle"></span>
+                            FAQ
+                            </a>
+                        </li>
+                    </ul>
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-body-secondary text-uppercase">
+                    <b>USER</b>
+                    </h6>
+                    <ul class="nav flex-column mb-auto">
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2" href="profile.html">
+                            <span class="bi bi-person-circle"></span>
+                            John Doe
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link d-flex align-items-center gap-2">
+                            <span class="bi bi-box-arrow-in-left"></span>
+                            Logout
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+
+            <!-- settings modal -->
+            <div class="modal fade" id="settings_modal">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header p-2 pe-2 ps-2">
+                    <h6 class="modal-title">Settings</h6>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                    <div class="d-grid gap-3">
+                        <div>
+                            <a href="#"><div>Change email address</div></a>
+                            <a href="#"><div>Change password</div></a>
+                            <a href="#"><div>Delete my account</div></a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-md-9 ms-sm-auto col-lg-9 px-md-4">
+                <div class="mt-4">
+                    <div class="mb-4">
+                        <div class="mb-2">
+                            <div><h4>Courses (3)</h4></div>
+                            <p class="small">List of courses you have paid for and yet to pay for</p>
+                        </div>
+                        <div class="row g-3">
+                            <div class="col-md-6 col-lg-6 col-xl-4">
+                                <div class="card p-3 shadow">
+                                    <div class="course-img mb-1">
+                                        <img src="../assets/img/fx_basic.webp" alt="course image" class="img-fluid rounded">
+                                    </div>
+                                    <div>
+                                        <h5>Introduction to Forex I</h5>
+                                        <p class="text-muted small">
+                                            Foundational knowledge of forex, terminology, and basic strategies.
+                                        </p>
+                                        <div class="d-flex justify-content-between small">
+                                            <div class="me-2"><i class="bi bi-clock text-danger"></i> 4h, 32m</div>
+                                            <div class="me-2"><i class="bi bi-people-fill text-danger"></i> 20 Undergoed</div>
+                                            <div><i class="bi bi-play-circle text-danger"></i> 11</div>
+                                        </div>
+                                        <hr>
+                                        <div class="mb-3">
+                                            <div>
+                                                <i class="bi-star-fill text-warning"></i>
+                                                <i class="bi-star-fill text-warning"></i>
+                                                <i class="bi-star-fill text-warning"></i>
+                                                <i class="bi-star-fill text-warning"></i>
+                                                <i class="bi-star"></i>
+                                                <b>4.9</b>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <a href="course-details.html">
+                                                <button class="btn btn-dark w-100 fw-bold rounded-pill">Open</button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-6 col-xl-4">
+                                <div class="card p-3 shadow">
+                                    <div class="course-img mb-1">
+                                        <img src="../assets/img/fx_basic.webp" alt="course image" class="img-fluid rounded">
+                                    </div>
+                                    <div>
+                                        <h5>Introduction to Forex II</h5>
+                                        <p class="text-muted small">
+                                            Foundational knowledge of forex, terminology, and basic strategies.
+                                        </p>
+                                        <div class="d-flex justify-content-between small">
+                                            <div class="me-2"><i class="bi bi-clock text-danger"></i> 4h, 32m</div>
+                                            <div class="me-2"><i class="bi bi-people-fill text-danger"></i> 20 Undergoed</div>
+                                            <div><i class="bi bi-play-circle text-danger"></i> 11</div>
+                                        </div>
+                                        <hr>
+                                        <div class="d-flex justify-content-between mb-3">
+                                            <div>
+                                                <i class="bi-star-fill text-warning"></i>
+                                                <i class="bi-star-fill text-warning"></i>
+                                                <i class="bi-star-fill text-warning"></i>
+                                                <i class="bi-star-fill text-warning"></i>
+                                                <i class="bi-star"></i>
+                                                <b>4.9</b>
+                                            </div>
+                                            <div>
+                                                <b>₦175K</b>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <a href="course-details0.html">
+                                                <button class="btn btn-success w-100 fw-bold rounded-pill"><i class="bi bi-credit-card"></i> Pay Now</button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-6 col-xl-4">
+                                <div class="card p-3 shadow">
+                                    <div class="course-img mb-1">
+                                        <img src="../assets/img/fx_basic.webp" alt="course image" class="img-fluid rounded">
+                                    </div>
+                                    <div>
+                                        <h5>Introduction to Forex III</h5>
+                                        <p class="text-muted small">
+                                            Foundational knowledge of forex, terminology, and basic strategies.
+                                        </p>
+                                        <div class="d-flex justify-content-between small">
+                                            <div class="me-2"><i class="bi bi-clock text-danger"></i> 4h, 32m</div>
+                                            <div class="me-2"><i class="bi bi-people-fill text-danger"></i> 20 Undergoed</div>
+                                            <div><i class="bi bi-play-circle text-danger"></i> 11</div>
+                                        </div>
+                                        <hr>
+                                        <div class="d-flex justify-content-between mb-3">
+                                            <div>
+                                                <i class="bi-star-fill text-warning"></i>
+                                                <i class="bi-star-fill text-warning"></i>
+                                                <i class="bi-star-fill text-warning"></i>
+                                                <i class="bi-star-fill text-warning"></i>
+                                                <i class="bi-star"></i>
+                                                <b>4.9</b>
+                                            </div>
+                                            <div>
+                                                <b>₦175K</b>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <button class="btn btn-success w-100 fw-bold rounded-pill"><i class="bi bi-credit-card"></i> Pay Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

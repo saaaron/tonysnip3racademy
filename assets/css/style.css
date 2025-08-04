@@ -1,0 +1,198 @@
+body {
+    font-family: "Roboto";
+}
+
+/* remove bs5 focus borders start */
+.btn-danger:focus {
+	-webkit-box-shadow: none!important;
+	box-shadow: none!important;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #50506F;
+    border-top-color: rgb(80, 80, 111);
+    border-right-color: rgb(80, 80, 111);
+    border-bottom-color: rgb(80, 80, 111);
+    border-left-color: rgb(80, 80, 111);
+    outline: 0;
+    box-shadow: 0 0 0 0;
+}
+/* remove bs5 focus borders end */
+
+/* show password toggle redefined start */
+.my-toggle {
+    background: transparent;
+    border: 0px none;
+    border-radius: 1em;
+    color: #6c757d;
+    cursor: pointer;
+    font-size: 0.75em;
+    font-weight: bold;
+    margin-right: 0.5em;
+    padding: 0.5em;
+    text-transform: uppercase;
+    -moz-appearance: none;
+}
+
+.my-toggle:hover {
+    color: #000;
+    transition: color 0.3s linear;
+   	-webkit-transition: color 0.3s linear;
+   	-moz-transition: color 0.3s linear;
+}
+/* show password toggle redefined end */
+
+#d_body {
+    background-color: #fdfdfd;
+}
+
+.icon_size_inc {
+    font-size: 1.5rem;
+}
+
+.sidebar .nav-item a {
+    color: #777;
+}
+
+.sidebar .nav-item a:hover, 
+.sidebar a:focus, 
+.sidebar a:active {
+    color: #dc3545;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+}
+
+.sidebar .nav-link:hover, 
+.sidebar .nav-link:focus {
+    color: inherit;
+}
+
+.sidebar .nav-link.active {
+    background-color: #f1f1f1;
+    color: #dc3545;
+    border-radius: 10px;
+}
+
+.offcanvas-md .offcanvas-body {
+    padding: 1rem !important;
+}
+
+.spinner-border {
+    height: 20px;
+    width: 20px;
+}
+
+.form-check-input:checked {
+    background-color: #212529;
+    border-color: #212529;
+}
+
+.active>.page-link {
+    color: #ffffff;
+    background-color: #212529;
+    border-color: #212529;
+}
+
+.placeholder {
+    background-color: #ccc;
+}
+
+.accordion-button:not(.collapsed) {
+    color: rgb(0 0 0);
+    background-color: #eee;
+}
+
+.logo {
+    height: 35px;
+}
+
+.logo img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+	transition: color 0.3s linear;
+   	-webkit-transition: color 0.3s linear;
+   	-moz-transition: color 0.3s linear;
+}
+
+a:hover, a:focus, a:active {
+    background-color: transparent;
+}
+
+.notification-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.notification-badge {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    transform: translate(50%, -50%);
+    font-size: 1rem;
+    padding: 0.25em 0.4em;
+    border-radius: 999px;
+}
+
+.lg_profile_photo_prev {
+    height: 200px;
+    width: 200px;
+}
+
+.lg_profile_photo_prev img {
+    max-width: 100%;
+    max-height: 100%;
+    border: 5px solid #eee;
+    border-radius: 50%;
+}
+
+.sticky-body {
+	position: sticky;
+	top: 60px;
+}
+
+.player-wrapper {
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 16 / 9;
+    position: relative;
+}
+
+.player-wrapper [data-player] {
+    width: 100% !important;
+    height: 70% !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.course-tutor-img {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.course-tutor-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 5px solid #eee;
+    border-radius: 50%;
+    display: block;
+}
+
+.review-user-img {
+    height: 50px;
+    width: 50px;
+}
+
+.review-user-img img {
+    max-width: 100%;
+    max-height: 100%;
+    border: 5px solid #eee;
+    border-radius: 50%;
+}
